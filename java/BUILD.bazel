@@ -1,0 +1,7 @@
+package(default_visibility = ["//visibility:public"])
+
+java_proto_library(
+    name = "worker_protocol_java_proto",
+    deps = ["@bazel_worker_api//:worker_protocol_proto"],
+)
+

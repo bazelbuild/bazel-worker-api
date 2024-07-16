@@ -1,0 +1,12 @@
+java_test(
+    name = "WorkRequestHandlerTest",
+    srcs = ["WorkRequestHandlerTest.java"],
+    deps = [
+        "//:worker_protocol_java_proto",
+        "//src/main/java/com/google/devtools/build/lib/worker:work_request_handlers",
+        "@maven//:junit_junit",
+        "@maven//:org_mockito_mockito_core",
+        "@maven//:com_google_truth_truth",
+    ],
+)
+

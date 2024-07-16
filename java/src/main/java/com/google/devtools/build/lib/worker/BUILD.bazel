@@ -1,0 +1,19 @@
+package(default_visibility = ["//visibility:public"])
+
+java_library(
+    name = "work_request_handlers",
+    srcs = [
+        "JsonWorkerMessageProcessor.java",
+        "ProtoWorkerMessageProcessor.java",
+        "WorkRequestHandler.java",
+    ],
+    deps = [
+        "//:worker_protocol_java_proto",
+        "@maven//:com_google_code_gson_gson",
+	"@maven//:com_google_errorprone_error_prone_annotations",
+        "@maven//:com_google_guava_guava",
+        "@maven//:com_google_protobuf_protobuf_java",
+        "@maven//:com_google_protobuf_protobuf_java_util",
+    ],
+)
+
