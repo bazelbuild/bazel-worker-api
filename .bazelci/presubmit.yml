@@ -1,0 +1,18 @@
+buildifer: latest
+matrix:
+  platform: ["ubuntu2204", "macos", "macos_arm64", "windows"]
+tasks:
+  proto:
+    name: proto
+    platform: ${{ platform }}
+    working_directory: proto
+    build_targets:
+    - //...
+  java:
+    name: java
+    platform: ${{ platform }}
+    working_directory: java
+    build_targets:
+    - //...
+    test_targets:
+    - //...
