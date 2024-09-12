@@ -7,4 +7,4 @@ tasks:
     platform: ${{ platform }}
     bazel: ${{ bazel }}
     build_targets:
-    - //...
+    - '@bazel_worker_api//...'
