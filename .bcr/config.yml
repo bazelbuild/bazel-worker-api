@@ -1,0 +1,6 @@
+fixedReleaser:
+  login: "Wyverald"
+  email: "wyverald@gmail.com"
+moduleRoots:
+- "proto"
+- "java"
