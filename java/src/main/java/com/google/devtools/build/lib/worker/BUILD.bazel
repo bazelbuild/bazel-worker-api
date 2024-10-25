@@ -1,5 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
+load("@rules_java//java:defs.bzl", "java_library")
+
 java_library(
     name = "work_request_handlers",
     srcs = [
