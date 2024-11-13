@@ -2,3 +2,5 @@ module(
     name = "bazel_worker_api",
     version = "0",
 )
+
+bazel_dep(name = "protobuf", version = "27.2")
