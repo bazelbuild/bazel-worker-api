@@ -3,4 +3,4 @@ module(
     version = "0",
 )
 
-bazel_dep(name = "protobuf", version = "27.2")
+bazel_dep(name = "protobuf", version = "27.2", repo_name = "com_google_protobuf")
