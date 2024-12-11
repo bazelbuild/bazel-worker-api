@@ -10,6 +10,7 @@ bazel_dep(name = "rules_java", version = "7.12.2")
 
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
+    name = "maven_bazel_worker_api",
     artifacts = [
         "com.google.code.gson:gson:2.10.1",
         "com.google.errorprone:error_prone_annotations:2.23.0",
@@ -36,7 +37,7 @@ maven.artifact(
     testonly = True,
     version = "1.4.0",
 )
-use_repo(maven, "maven")
+use_repo(maven, "maven_bazel_worker_api")
 
 local_path_override(
     module_name = "bazel_worker_api",

@@ -11,11 +11,11 @@ java_library(
     ],
     deps = [
         "//:worker_protocol_java_proto",
-        "@maven//:com_google_code_gson_gson",
-        "@maven//:com_google_errorprone_error_prone_annotations",
-        "@maven//:com_google_guava_guava",
-        "@maven//:com_google_protobuf_protobuf_java",
-        "@maven//:com_google_protobuf_protobuf_java_util",
+        "@maven_bazel_worker_api//:com_google_code_gson_gson",
+        "@maven_bazel_worker_api//:com_google_errorprone_error_prone_annotations",
+        "@maven_bazel_worker_api//:com_google_guava_guava",
+        "@maven_bazel_worker_api//:com_google_protobuf_protobuf_java",
+        "@maven_bazel_worker_api//:com_google_protobuf_protobuf_java_util",
     ],
 )
 
