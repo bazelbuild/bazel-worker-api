@@ -20,18 +20,21 @@ maven.install(
     ],
 )
 maven.artifact(
+    name = "maven_bazel_worker_api",
     artifact = "junit",
     group = "junit",
     testonly = True,
     version = "4.13.2",
 )
 maven.artifact(
+    name = "maven_bazel_worker_api",
     artifact = "mockito-core",
     group = "org.mockito",
     testonly = True,
     version = "5.4.0",
 )
 maven.artifact(
+    name = "maven_bazel_worker_api",
     artifact = "truth",
     group = "com.google.truth",
     testonly = True,
