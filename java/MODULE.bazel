@@ -19,24 +19,27 @@ maven.install(
     ],
 )
 maven.artifact(
+    name = "test_deps",
     artifact = "junit",
     group = "junit",
     testonly = True,
     version = "4.13.2",
 )
 maven.artifact(
+    name = "test_deps",
     artifact = "mockito-core",
     group = "org.mockito",
     testonly = True,
     version = "5.4.0",
 )
 maven.artifact(
+    name = "test_deps",
     artifact = "truth",
     group = "com.google.truth",
     testonly = True,
     version = "1.4.0",
 )
-use_repo(maven, "maven")
+use_repo(maven, "maven", "test_deps")
 
 local_path_override(
     module_name = "bazel_worker_api",

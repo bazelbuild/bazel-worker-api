@@ -4,9 +4,9 @@ java_test(
     deps = [
         "//:worker_protocol_java_proto",
         "//src/main/java/com/google/devtools/build/lib/worker:work_request_handlers",
-        "@maven//:junit_junit",
-        "@maven//:org_mockito_mockito_core",
-        "@maven//:com_google_truth_truth",
+        "@test_deps//:junit_junit",
+        "@test_deps//:org_mockito_mockito_core",
+        "@test_deps//:com_google_truth_truth",
     ],
 )
 
