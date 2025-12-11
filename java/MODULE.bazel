@@ -18,6 +18,7 @@ maven.install(
         "com.google.protobuf:protobuf-java:4.31.1",
         "com.google.protobuf:protobuf-java-util:4.31.1",
     ],
+    lock_file = "//:bazel_worker_deps_install.json",
 )
 maven.artifact(
     name = "test_deps",
