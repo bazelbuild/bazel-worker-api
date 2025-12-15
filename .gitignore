@@ -1,2 +1,3 @@
 bazel-*
 
+rules_jvm_external++maven+bazel_worker_maven_install.json
