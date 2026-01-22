@@ -14,5 +14,6 @@ EOF
 fi
 sed -i '' 's/bazel_dep(name = "bazel_worker_api")/bazel_dep(name = "bazel_worker_api", version = "'${VER}'")/' java/MODULE.bazel
 git commit -am "Release ${VER}"
-git archive --format=tar --prefix=bazel-worker-api-${VER}/ `git rev-parse HEAD` java proto | gzip > bazel-worker-api-v${VER}.tar.gz
+git archive --format=tar --prefix=bazel-worker-api-${VER}/ `git rev-parse HEAD` \
+  java proto ':!:*/.bazelversion' | gzip > bazel-worker-api-v${VER}.tar.gz
 git reset --hard HEAD^
