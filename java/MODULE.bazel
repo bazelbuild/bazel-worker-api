@@ -17,6 +17,7 @@ maven.install(
         "com.google.errorprone:error_prone_annotations:2.23.0",
         "com.google.guava:guava:33.0.0-jre",
     ],
+    lock_file = "//:bazel_worker_deps_install.json",
 )
 maven.artifact(
     name = "test_deps",
